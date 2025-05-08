@@ -1,0 +1,26 @@
+version: 2
+models:
+  - name: raw_customer
+    latest_version: 1
+    versions:
+      - v: 1
+  - name: raw_items
+    latest_version: 1
+    versions:
+      - v: 1
+  - name: raw_orders
+    latest_version: 1
+    versions:
+      - v: 1
+  - name: raw_supplies
+    latest_version: 1
+    versions:
+      - v: 1
+  - name: raw_stores
+    latest_version: 1
+    versions:
+      - v: 1
+  - name: raw_products
+    latest_version: 1
+    versions:
+      - v: 1
