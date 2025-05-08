@@ -1,0 +1,12 @@
+version: 2
+sources:
+  - name: jaffle_data
+    database: teclaguna-data-lake
+    schema: raw
+    tables:
+      - name: raw_costumers
+      - name: raw_items
+      - name: raw_orders
+      - name: raw_products
+      - name: raw_stores
+      - name: raw_supplies
