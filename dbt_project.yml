@@ -38,5 +38,12 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   my_new_project:
     # Applies to all files under models/example/
-    example:
-      +materialized: table
+    database: "{% if target.name == 'prod' %} teclaguna-presentation {% else %} teclaguna-transformation {% endif %}"
+    raw:
+      +database: "{% if target.name == 'prod' %} teclaguna-data-lake {% else %} staging-458821 {% endif %}"
+      jaffle_data:
+        +schema: jaffle_data
+    staging: 
+      +schema: stage_jaffle_shop
+    marts:
+      +schema: jaffle_shop
